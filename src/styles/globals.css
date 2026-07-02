@@ -1,0 +1,41 @@
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080d1a;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 200, 255, 0.25);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 200, 255, 0.45);
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(0, 200, 255, 0.25);
+  color: #dce8f5;
+}
+
+/* Remove autofill browser background on inputs */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #162040 inset !important;
+  -webkit-text-fill-color: #dce8f5 !important;
+  caret-color: #dce8f5;
+}
+
+/* Focus-visible only (not on mouse click) */
+:focus:not(:focus-visible) {
+  outline: none;
+}
